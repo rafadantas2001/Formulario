@@ -1,13 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>    
-        <form action="CadastroServlet" method="get">
+<title>Login</title>
+</head>
+<body>
+<form action="CadastroServlet" method="get">
              <h1> Login </h1> <br>
   <label for="fname">E-MAIL:</label><br>
   <input type="text" name="email"><br>
@@ -15,6 +15,6 @@
   <input type="text" name="senha"><br><br>
   <input type="submit" value="Enviar">
 </form>
-        
-    </body>
+
+</body>
 </html>
