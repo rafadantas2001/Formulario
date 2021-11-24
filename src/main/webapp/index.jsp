@@ -8,7 +8,7 @@
 <title>Login</title>
 </head>
 <body>
-<form action="CadastroServlet" method="get">
+<form action="LoginServlet" method="get">
              <h1> Login </h1> <br>
   <label for="fname">E-MAIL:</label><br>
   <input type="text" name="email"><br>

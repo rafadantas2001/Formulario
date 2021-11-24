@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/CadastroServlet")
+@WebServlet("/LoginServlet")
 public class LoginController extends HttpServlet{
 	
 	private static final long serialVersionUID = -1083126838419352162L;
