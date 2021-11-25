@@ -3,8 +3,6 @@ package com.project.jdbc;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -17,9 +15,7 @@ private DataSource datasource;
 		this.datasource = datasource;
 	}
 	
-	public List<Login> getStudents() throws Exception {
-		List<Login> login = new ArrayList<>();
-		
+	public Login getLogin() throws Exception {		
 		Connection myConn = null;
 		Statement myStmt = null;
 		ResultSet myRs = null;
@@ -30,15 +26,12 @@ private DataSource datasource;
 			mySql = "SELECT username, password from login";
 			myStmt = myConn.createStatement();
 			myRs = myStmt.executeQuery(mySql);
+					
+			String username = myRs.getString("username");
+			String password = myRs.getString("password");
 			
-			while(myRs.next()) {
-				String username = myRs.getString("username");
-				String password = myRs.getString("password");
-				
-				Login tempLogin = new Login(username, password);
-				login.add(tempLogin);
-			}
-			
+			Login login = new Login(username, password);
+
 			return login;
 		}
 		finally {

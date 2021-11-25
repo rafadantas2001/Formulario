@@ -23,6 +23,9 @@ public class Login {
 		this.username = username;
 		this.password = password;
 	}
+	public Login() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 }

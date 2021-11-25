@@ -6,6 +6,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
+<script>
+	function login(){
+		window.location.href='add-estacionamento-form.jsp';
+		return false;
+	}
+</script>
 </head>
 <body>
 <form action="LoginServlet" method="get">
